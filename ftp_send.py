@@ -10,13 +10,13 @@ ftp.connect(HOST, PORT)
 #print(ftp.login(user='pi', passwd='9'))
 print(ftp.login(user='pi', passwd='9'))
 
-ftp.cwd('intel/out/')
+ftp.cwd('poses/')
 #ftp.cwd('/media/linaro/Transcend/Video/')
 #ftp.cwd('0')
 #data = ftp.retrlines('LIST')
 #print(data)
 
-fl = '1611267106.1079283.png'
+fl = 'out.zip'
 out = 'out/' + fl
 
 with open(out, 'wb') as f:
